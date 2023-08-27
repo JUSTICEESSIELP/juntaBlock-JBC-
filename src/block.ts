@@ -4,7 +4,7 @@ import crypto from "crypto";
 class Block {
   private hash: string;
   private lastHash: string;
-  private data: string ;
+  private data: string;
   private date: Date;
 
   constructor(constructorTypes: BlockConstructorType) {
@@ -25,7 +25,25 @@ class Block {
     return new Block(defaultBlockData);
   }
 
-  mineBlock(
+  get getLastHash():string{
+    return this.lastHash
+
+  }
+
+  get getCurrentHash():string{
+    return this.hash
+  }
+
+  get getData():string{
+    return this.data
+  }
+
+  get BlockDated():Date{
+    return this.date
+  }
+
+
+  static mineBlock(
     lastBlockHash: BlockConstructorType["hash"],
     data: BlockConstructorType["data"]
   ) {

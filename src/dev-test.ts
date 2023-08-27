@@ -12,4 +12,4 @@ const genesisJunta = new Block(blockData);
 // console.log(genesisJunta);
 
 // console.log(Block.genesis());
-console.log(genesisJunta.mineBlock(Block.genesis()['hash'], "second data "));
+console.log(Block.mineBlock(Block.genesis()["hash"], "second data "));
