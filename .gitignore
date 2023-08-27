@@ -1,1 +1,16 @@
-./node_modules
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+dist/
+
+# Ignore development environment files
+.env
+
+# Ignore TypeScript compilation artifacts
+*.js
+*.js.map
+
+# Ignore any IDE-specific files or folders
+.vscode/
+.idea/
